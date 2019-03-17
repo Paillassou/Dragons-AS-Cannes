@@ -1,0 +1,309 @@
+/*GLOBAL PARAM*/
+body {
+    background-image: url("images/imagefond2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Montserrat",Arial,sans-serif;
+}
+
+/* HEADER */
+#logodragons {
+    height: 100px;
+}
+
+#team2{
+
+    display: none;
+}
+
+#topburger {
+    color: white;
+    margin: 5px;
+    float: right;
+}
+
+#top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#topright {
+    float: right;
+
+}
+.top2{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.champ {
+    border-radius: 4px;
+    outline: none;
+    width: 400px;
+    background-color: white;
+    background-image: url('images/iconsearch.png');
+    background-position: 5px 5px;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 30px;
+}
+
+#searchbar {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* !! HEADER !! */
+/* MIDDLE */
+/* LIST*/
+
+    #logodragons1{
+        display: none;
+    }
+    .team{
+        display: none;
+    }
+#midlist {
+    border: 2px solid gray;
+    border-radius: 30px;
+    margin: 10px 10px 10px 10px;
+    height: 300px;
+    line-height: 10px;
+}
+
+#list {
+    height: 210px;
+    overflow-y: scroll;
+}
+
+#searching {
+    background-color: white;
+    background-image: url('images/iconsearch.png');
+    background-position: 5px 5px;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 30px;
+    width: 300px;
+}
+
+.col-12 {
+    flex: 0 0 97%;
+}
+
+button {
+    outline: none;
+    text-decoration: none;
+}
+
+#avatar {
+    height: 40px;
+}
+
+.button1 {
+    font-weight: bold;
+    margin-left: 40px;
+    font-size: 16px;
+    float: right;
+    height: 40px;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: rgb(206, 0, 51);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(166, 0, 11);
+    color: white;
+}
+
+#listadh {
+    padding: 2px;
+}
+
+#listAdh {
+    width: 100%;
+}
+
+/* !!! LIST */
+/*POPUP*/
+#popup1 {
+    width: 100%;
+    background-color: lightgray;
+    z-index: 1;
+    height: 220px;
+    margin-top: 10px;
+    line-height: 20px;
+    border-radius: 20px;
+    border: 2px, solid, lightgray;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#cross{
+    cursor: pointer;
+}
+
+#infoPop {
+    height: 280px;
+}
+
+.show {
+    display: block;
+}
+
+.flex{
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+#avatar1 {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+/* !!! POPUP*/
+/*STATS*/
+#stats {
+    border: 2px solid gray;
+    border-radius: 30px;
+    height: 240px;
+    margin: 2px 10px 0px 10px;
+    padding: 10px;
+}
+
+th {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.statbut {
+    margin-top: 40px;
+    max-height: 40px;
+    outline: none;
+    text-decoration: none;
+}
+
+/* !!! STATS */
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 768px) {
+#avatar1{
+    width: 160px;
+    height: 160px;
+}
+
+#popup1{
+
+    justify-content: center;
+}
+}
+
+@media screen and (min-width: 992px) {
+
+    #searchbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .champ{
+        float: right;
+    }
+
+
+    #midlist {
+        height: 520px;
+    }
+
+    #stats {
+        height: 520px;
+    }
+
+    #list {
+        height: 380px;
+    }
+
+    #buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #topburger{
+        display: none;
+    }
+
+    h4{
+        padding: 20px;
+        padding-left: 10px;
+        font-size: 36px;
+    }
+
+    #popup1 td{
+        padding: 6px;
+    }
+    #avatar1{
+        height: 160px;
+        width: 160px;
+    }
+
+    #popup1{
+        line-height: normal;
+        height: 280px;
+        width: 100%;
+
+    }
+
+    #logodragons1{
+        display: block;
+        height: 100px;
+        margin-left: 10px;
+    }
+    #logodragons{
+        display: none;
+    }
+    #top{
+        background-image: url(images/redbg.jpg);
+        display: block;
+    }
+    .top2{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #stats{
+        margin : 10px;
+    }
+
+    .team{
+        display: block;
+        height: 30%;
+        width: 30%;
+        padding: 10px;
+    }
+
+#team2{
+    width: 30%;
+    padding-top: 20px;
+    display: block;
+
+}
+.statbut {
+    margin-top: -10px;
+    max-height: 40px;
+}
+
+.butpop{
+    width: 180px;
+}
+
+}
